@@ -1,10 +1,10 @@
 import json, re
 
-input("Please place your \"manifest.json\" inside of the \"Testing\" folder.\nPress enter to start check.")
+input("\nPlease place your \"manifest.json\" inside of the this folder.\nPress enter to start check.")
 
 print("\nReading manifest...")
 try:
-    with open("Testing\manifest.json", "r+") as f:
+    with open("manifest.json", "r+") as f:
         json_data = json.load(f)
 except:
     input("Failed to find file")
