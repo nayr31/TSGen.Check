@@ -6,7 +6,7 @@ Checks:
 
 - All required fields are present
 - Name follows proper regex ([a-zA-Z0-9_])
-- Version number is a 3 length string of dots
+- Version number follows [Semantic Versioning](https://semver.org).
 - Description is under 250 characters
 - Dependencies are in list format
 
