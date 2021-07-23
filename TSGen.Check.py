@@ -61,4 +61,4 @@ except:
     print("Failed to find or confirm validity \"dependencies\" field, make sure it is present in your manifest and follows correct format:")
     input("Is a list (\'[\' and \']\' encapsulate your object), and dependency strings are seperated by commas.")
 
-input("Manifest check finished. Make sure you include \"icon.png\" and \"README.md\" files in your upload.")
+input("\nManifest check finished. Make sure you include \"icon.png\" and \"README.md\" files in your upload.")
