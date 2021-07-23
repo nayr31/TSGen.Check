@@ -12,6 +12,6 @@ Checks:
 
 ## Installation/Usage
 
-1. Download `TSGen.Check.exe` from the [Releases](https://github.com/nayr31/TSGen.Check/releases) page. 
+1. Download `TSGen.Check.exe` from the [Releases](https://github.com/nayr31/TSGen.Check/releases) page.
 2. Place it in a folder next to your `manifest.json` file you wish to check.
 3. Run the program and follow the terminal prompts.

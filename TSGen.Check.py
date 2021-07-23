@@ -1,4 +1,5 @@
 import json, re
+from packaging.version import Version
 
 input("\nPlease place your \"manifest.json\" inside of the this folder.\nPress enter to start check.")
 
@@ -23,19 +24,19 @@ except:
 
 print("\nVerifying \"version_number\"...")
 try:
-    testList = json_data["version_number"].split(".")
-    if not len(testList) == 3:
-        print("\"version_number\" does not have the correct size, make sure that the format follows:")
-        print("\"x.x.x\", where each \'x\' is a number.")
-    else:
+    testString = json_data["version_number"]
+    try:
+        Version(json_data["version_number"])
         print("Verified")
+    except:
+        print("Version number invalid, make sure it follows the \"x.x.x\" semantic versioning.")
 except:
     input("Failed to find \"version_number\" field, make sure it is present in your manifest.")
 
 print("\nVerifying \"description\"...")
 try:
-    testList = json_data["description"].split(".")
-    if not len(testList) <= 250:
+    testString = json_data["description"]
+    if not len(testString) <= 250:
         print("\"description\" does not have the correct size, make sure that the format follows:")
         print("Less than 250 characters.")
     else:
