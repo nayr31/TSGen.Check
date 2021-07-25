@@ -1,14 +1,19 @@
 # TSGen.Check
 
-A tool made to check the validity of Thunderstore manifests on a basic level.
+A tool made to check the validity of Thunderstore required files.
 
 Checks:
 
-- All required fields are present
-- Name follows proper regex ([a-zA-Z0-9_])
-- Version number follows [Semantic Versioning](https://semver.org).
-- Description is under 250 characters
-- Dependencies are in list format
+- Manifest:
+  - All required fields are present
+  - Name follows proper regex ([a-zA-Z0-9_])
+  - Version number follows [Semantic Versioning](https://semver.org).
+  - Description is under 250 characters
+  - Dependencies are in list format
+- Icon
+  - Has a size of 256x256
+- Readme
+  - Is present
 
 ## Installation/Usage
 
