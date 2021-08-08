@@ -1,5 +1,7 @@
 # TSGen.Check
 
+This tool is now depricated with the release of the [validator tool](https://thunderstore.io/tools/manifest-v1-validator/). You can still use it to check the validity of your other files though.
+
 A tool made to check the validity of Thunderstore required files.
 
 Checks:
